@@ -1,0 +1,1 @@
+javascript:(() => { const speed = prompt('Speed', 2), video = document.querySelector('video'); Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'playbackRate').set.call(video, speed); Object.defineProperty(video, 'playbackRate', { writable: false }) })()
